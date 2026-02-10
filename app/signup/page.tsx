@@ -1,10 +1,8 @@
+"use client";
 import { Sparkles, Mail, Lock, User } from 'lucide-react';
+import Link from 'next/link';
 
-interface SignUpProps {
-  onSwitchToLogin: () => void;
-}
-
-export function SignUp({ onSwitchToLogin }: SignUpProps) {
+export default function SignUp() {
   return (
     <div className="min-h-screen bg-linear-to-br from-slate-50 to-slate-100 flex items-center justify-center px-6">
       <div className="w-full max-w-md">
@@ -85,24 +83,24 @@ export function SignUp({ onSwitchToLogin }: SignUpProps) {
               </label>
             </div>
 
-            <button
+            <Link href="/"
               type="button"
-              className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors font-medium mt-6"
+              className="block text-center w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors font-medium mt-6"
             >
               Create Account
-            </button>
+            </Link>
           </form>
 
           <div className="mt-6 text-center">
             <p className="text-slate-600 text-sm">
               Already have an account?{' '}
-              <button
+              <Link
                 type="button"
-                onClick={onSwitchToLogin}
+                href="/login"
                 className="text-blue-600 font-medium hover:text-blue-700 transition-colors"
               >
                 Sign in
-              </button>
+              </Link>
             </p>
           </div>
         </div>
