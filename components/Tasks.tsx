@@ -67,17 +67,18 @@ const Tasks = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="energy" className="block text-sm font-medium text-slate-700 mb-1">
+                    <label htmlFor="status" className="block text-sm font-medium text-slate-700 mb-1">
                       <Zap className="w-4 h-4 inline mr-1" />
-                      Energy Required
+                      Status
                     </label>
                     <select
-                      id="energy"
+                      id="status"
                       className="w-full px-3 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     >
-                      <option value="">Select energy level</option>
-                      <option value="low">Low</option>
-                      <option value="high">High</option>
+                      <option value="">Select Status</option>
+                      <option value="ToDo">To Do</option>
+                      <option value="Running">Running</option>
+                      <option value="Completed">Completed</option>
                     </select>
                   </div>
                 </div>

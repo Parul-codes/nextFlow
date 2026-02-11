@@ -11,7 +11,7 @@ const Schedule = () => {
                 <option value="">Make a Decision</option>
                 <option value="priority">Focus on what matters most</option>
                 <option value="sjf">Finish quick wins</option>
-                <option value="round-robin">Balance all tasks fairly</option>
+                <option value="balanced">Balance all tasks fairly</option>
             </select>
 
             <button
